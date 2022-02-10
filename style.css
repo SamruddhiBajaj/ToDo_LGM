@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    /* background-color: palegreen; */
+    background-color: rosybrown;
+    padding: 100px 15% 0% 15%;
+    
+}
+
+.header {
+    text-align: center;
+    background-color: rgb(9, 50, 87);
+    padding: 0.5px 40px 22px 40px;
+}
+
+h2 {
+    font-family: "Charm";
+    font-size: 25px;
+    color: snow;
+}
+
+input {
+    margin: 0;
+    border: none;
+    padding: 1% 2%;
+    width: 75%;
+    float: left;
+    font-size: 18px;
+    font-family: "Allan";
+}
+
+.Button {
+    margin: 0;
+    padding: 1%;
+    width: 25%;
+    font-size: 18px;
+    background-color: silver;
+    float: left;
+    color: rgb(4, 21, 36);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Allan";
+}
+
+.Button:hover {
+    background-color: darkgray;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    background-color: lightcyan;
+    font-size: 25px;
+    font-family: "Boogaloo";
+    transition: 0.2s;
+    padding: 0.5% 40px;
+    color: rgb(4, 21, 36);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(even) {
+    background-color: paleturquoise;
+}
+
+ul li:hover {
+    background-color: rgb(224, 41, 102);
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(4, 21, 36);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+ul li.checked {
+    color: rgb(4, 21, 36);
+    text-decoration: line-through;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 0px 10px 8px;
+    height: 100%;
+    width: 40px;
+}
+
+.close:hover {
+    background-color: rgb(9, 50, 87);
+    color: snow;
+}
